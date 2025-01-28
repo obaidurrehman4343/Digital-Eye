@@ -14,7 +14,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
 # Load the ResNet50V model
 # model = load_model("currency_detection\models\MobileNet_model.h5")
-model = load_model("currency_detection\models\ResNet50V2_model.h5", compile=False)
+# model = load_model("currency_detection\models\ResNet50V2_model.h5", compile=False)
+model = load_model("currency_detection/models/ResNet50V2_model.h5", compile=False)
 
 class CurrencyDetectionAPIView(APIView):
     # Handling GET request
